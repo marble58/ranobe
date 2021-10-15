@@ -26,6 +26,7 @@ func New(options ...*Options) (s Server) {
 		}
 	}
 	s.app = router.New()
+	
 	s.Logger = Logger(s.Options.LogPath)
 	return
 }
